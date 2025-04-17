@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephen Macharia</title>
+    <link rel="stylesheet" href="dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style1.css">
+    <script src="dist/js/bootstrap.bundle.js"></script>
+
+    <style>
+      img:hover {
+        transform: scale(1.1);
+        transition: 2s;
+      }
+    </style>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var myCarousel = document.querySelector('#partnerCarousel');
+        var carousel = new bootstrap.Carousel(myCarousel, {
+          interval: 2000,
+          ride: 'carousel'
+        });
+      });
+    </script>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <section class="row name">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand text-dark name" href="#">
+            <img src="images/logo.png" alt="logo" width="30px">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" href="#">Home</a>
+              <a class="nav-link" href="contactme.html">Contact Me</a>
+              <a class="nav-link" href="Aboutme.html">About Me</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="row intro">
+      <div class="card col-md-6 text-start shadow m-5">
+        <p id="par1">Hello my name is</p>
+        <h1 class="h1"><b>STEPHEN MACHARIA</b></h1>
+        <p class="text-light">I am a passionate and dedicated developer driven by the ever-evolving world of technology, a realm of limitless possibilities.</p>
+        <div class="button-container">
+          <button class="real-button" onclick="window.open('CV.pdf', '_blank')"></button>
+          <div class="button-border">
+            <div class="button">View CV</div>
+            <div class="backdrop"></div>
+            <div class="spin spin-blur"></div>
+            <div class="spin spin-intense"></div>
+            <div class="spin spin-inside"></div>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card col-md-6">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <video autoplay loop muted playsinline width="100%">
+              <source src="images/Black and Orange Modern Welcome to My Channel Video.mp4" type="video/mp4">
+            </video>
+          </div>
+          <img src="images/Black Gold Elegant Simple Monogram Initial Name Brand Logo.png" alt="busi" style="width: 200px; height: 200px;">
+        </div>
+      </div>
+    </section>
+
+    <!-- Who I Am Section -->
+    <section class="row">
+      <div class="col-md-6 text1">
+        <h3 class="h3 text-center">Who I am:</h3>
+        <p class="text-light text-center">
+          Hello, my name is Stephen Macharia and I am a developer. Welcome to this portfolio which is a curated collection of my work, reflecting not just what I've done, but why I do it. I believe in myself and the quality of my skills, and I'm passionate about creating solutions that improve diverse fields. Explore these projects to see how I translate vision into tangible results. I will use this platform to continuously document my work. This will enable quality ranking and reviews.
+        </p>
+      </div>
+      <div class="col-md-6 Circle">
+        <h2 class="text-center h12">My Skills</h2>
+        <ul class="Circle">
+          <li>Web Design</li>
+          <li>Full Stack Web Development</li>
+          <li>API Integration and Development</li>
+          <li>Web App Maintenance</li>
+          <li>Front-end Web Development</li>
+          <li>Back-end Web Development</li>
+          <li>Git Version Control</li>
+          <li>UI/UX Design</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-5 bg-dark text-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Projects</h2>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow">
+              <img src="images/Capture.PNG" class="card-img-top" alt="Project 1">
+              <div class="card-body">
+                <h5 class="card-title">E-commerce Web App</h5>
+                <p class="card-text">A full-stack e-commerce web application with authentication, cart, and checkout features using Flask and MySQL.(under development)</p>
+                <a href="https://woolsmartfashion.vercel.app/" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow">
+              <img src="images/real.PNG" class="card-img-top" alt="Project 2">
+              <div class="card-body">
+                <h5 class="card-title">Real Estate Website</h5>
+                <p class="card-text">A Real Estate portfolio built with HTML, CSS, and Bootstrap showcasing skills and projects.</p>
+                <a href="#" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack Carousel -->
+    <section class="bg-light py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">I Work With:</h2>
+        <div id="partnerCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#partnerCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#partnerCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          </div>
+
+          <div class="carousel-inner d-flex justify-content-start">
+            <div class="carousel-item active">
+              <div class="d-flex justify-content-start gap-4 flex-wrap">
+                <img src="images/vs.jpeg" class="img-fluid" style="max-height: 100px;" alt="Visual Studio logo">
+                <img src="images/css.jpeg" class="img-fluid" style="max-height: 100px;" alt="CSS logo">
+                <img src="images/htmllogo.png" class="img-fluid" style="max-height: 100px;" alt="HTML logo">
+                <img src="images/js.jpeg" class="img-fluid" style="max-height: 100px;" alt="JavaScript logo">
+                <img src="images/node.png" class="img-fluid" style="max-height: 100px;" alt="Node.js logo">
+                <img src="images/flask.jpeg" class="img-fluid" style="max-height: 100px;" alt="Flask logo">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-start gap-4 flex-wrap">
+                <img src="images/sql.png" class="img-fluid" style="max-height: 100px;" alt="SQL logo">
+                <img src="images/react2.png" class="img-fluid" style="max-height: 100px;" alt="React logo">
+                <img src="images/github.jpeg" class="img-fluid" style="max-height: 100px;" alt="GitHub logo">
+                <img src="images/chrome.jpeg" class="img-fluid" style="max-height: 100px;" alt="Chrome logo">
+                <img src="images/bootstrap.jpeg" class="img-fluid" style="max-height: 100px;" alt="Bootstrap logo">
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#partnerCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#partnerCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+    
+    </body>
+</html>

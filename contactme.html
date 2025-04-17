@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me - Stephen Macharia</title>
+  <link rel="stylesheet" href="dist/css/bootstrap.css">
+  <link rel="stylesheet" href="style1.css">
+  <script src="dist/js/bootstrap.bundle.js"></script>
+</head>
+<body class="bg-dark text-light">
+    <section class="row name">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand text-dark name" href="#">
+              <img src="images/logo.png" alt="logo" width="30px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" href="index.html">Home</a>
+                <a class="nav-link" href="contactme.html">Contact Me</a>
+                <a class="nav-link" href="Aboutme.html">About Me</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+
+  <section class="container py-5">
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <h2>Contact Me</h2>
+        <p>If you have any questions, project ideas, or would like to collaborate, feel free to get in touch through the form or my email below.</p>
+        <ul class="list-unstyled">
+          <li><strong>Email:</strong> <a href="mailto:stephen.dev@example.com" class="text-info">stephenmacharia024@gmail.com</a></li>
+          <li><strong>Phone:</strong> <a href="tel:+254700000000" class="text-info">+254 726333992</a></li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/StephenMacharia" target="_blank" class="text-info">StephenMacharia</a></li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <form action="https://formspree.io/f/xrbpvbda" method="POST">
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center py-4 bg-light text-dark mt-5">
+    <div class="container">
+      <p class="mb-1">&copy; 2024 Stephen Macharia. All rights reserved.</p>
+      <p>
+        <a href="mailto:stephenmacharia024@gmail.com" class="text-dark">Email</a> |
+        <a href="https://github.com/StephenMacharia" target="_blank" class="text-dark">GitHub</a> |
+        
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
